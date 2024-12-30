@@ -1,5 +1,5 @@
 ![logo](docs/img/easy-rider-logo.png)
-# easy-rider (under development)
+# easy-rider
 
 **easy-rider** is a command-line tool that formats HTTP redirect rules for various platforms.
 
@@ -18,7 +18,7 @@ roles to define HTTP redirects via a familiar interface (e.g. Google Sheets) and
 
 ### Example
 ```bash
-easy-rider generate --source google-sheets --sheet-id <SHEET_ID> --format netlify
+easy-rider generate -source google-sheets -sheet-id <SHEET_ID> -format netlify
 ```
 
 This command pulls redirect rules from the specified Google Sheets file and outputs them in Netlify's `_redirects` format.
@@ -46,13 +46,6 @@ Or, the same command with `-format vercel` would output:
   ]
 }
 ```
-
-## Features
-
-- **Multi-Source Support**: Pulls redirect configuration from various sources including Google Sheets, CSV files, and APIs.
-- **Multi-Format Export**: Formats redirect rules for platforms like:
-    - Netlify (`_redirects` format)
-    - Vercel (`vercel.json` format)
 
 ## Supported Sources
 
